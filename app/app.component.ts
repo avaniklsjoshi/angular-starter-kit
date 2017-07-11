@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {User} from './shared/model/User'
 
 @Component({
   selector : 'my-app',
