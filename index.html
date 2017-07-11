@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Getting angular2</title>
+  <link rel="shortcut icon" href="image/fire.png">
+  <!--css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+  <style>
+  body{padding: 50px 0;}
+  </style>
+  <!--js-->
+  <!--load dependencies-->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+  <!----load our ang app with systemjs-->
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <script>
+        System.import('app').catch(function(err) { console.error(err); });
+  </script>
+
+</head>
+<body class="container">
+  <!--<div class="jumbotron"> 
+    <h2>I'm going crazy</h2>
+  </div>-->
+  <my-app>  I am the best!
+    <br> with so much of Loadings..
+  </my-app>
+</body>
+</html>
